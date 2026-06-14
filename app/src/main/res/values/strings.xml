@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ResponsabilidadIntelectuales</string>
+
+    <string name="titulo_material">Material</string>
+    <string name="titulo_foro">Foro</string>
+    <string name="titulo_nosotros">Nosotros</string>
+    <string name="desc_publicar">Publicar en el foro</string>
+    <string name="menu_material">Material</string>
+    <string name="menu_foro">Foro</string>
+    <string name="menu_nosotros">Nosotros</string>
 </resources>
