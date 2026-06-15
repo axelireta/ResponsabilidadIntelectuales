@@ -8,4 +8,16 @@
     <string name="menu_material">Material</string>
     <string name="menu_foro">Foro</string>
     <string name="menu_nosotros">Nosotros</string>
+    <string name="etiqueta_mision">Misión</string>
+
+    <string name="contenido_mision">Crear un espacio donde las ideas puedan exponerse, debatirse y enriquecerse a través del intercambio respetuoso entre personas comprometidas con el pensamiento crítico.</string>
+
+    <string name="etiqueta_vision">Visión</string>
+    <string name="contenido_vision">Ser una comunidad de referencia donde el análisis riguroso y la reflexión colectiva contribuyan a una sociedad más consciente e informada.</string>
+
+    <string name="etiqueta_objetivo">Objetivo</string>
+    <string name="contenido_objetivo">Fomentar la participación de personas con interés genuino en temas sociales relevantes, brindando un espacio estructurado para publicar, debatir y mejorar ideas.</string>
+
+    <string name="etiqueta_valores">Valores</string>
+    <string name="contenido_valores">Pensamiento crítico, respeto en el debate, rigor intelectual, apertura al diálogo y compromiso con la sociedad.</string>
 </resources>

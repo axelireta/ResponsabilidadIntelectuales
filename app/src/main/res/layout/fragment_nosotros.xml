@@ -1,21 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.nosotros.NosotrosFragment">
 
-    <TextView
-        android:id="@+id/tvwTituloNosotros"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_nosotros"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvwTituloNosotros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_nosotros"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvwEtiquetaMision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_mision"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvwTituloNosotros" />
+
+        <TextView
+            android:id="@+id/tvwContenidoMision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contenido_mision"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvwEtiquetaMision" />
+
+        <TextView
+            android:id="@+id/tvwEtiquetaVision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_vision"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvwContenidoMision" />
+
+        <TextView
+            android:id="@+id/tvwContenidoVision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contenido_vision"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvwEtiquetaVision" />
+
+        <TextView
+            android:id="@+id/tvwEtiquetaObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_objetivo"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvwContenidoVision" />
+
+        <TextView
+            android:id="@+id/tvwContenidoObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contenido_objetivo"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvwEtiquetaObjetivo" />
+
+        <TextView
+            android:id="@+id/tvwEtiquetaValores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_valores"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvwContenidoObjetivo" />
+
+        <TextView
+            android:id="@+id/tvwContenidoValores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contenido_valores"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvwEtiquetaValores" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
