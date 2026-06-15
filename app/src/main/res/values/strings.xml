@@ -20,4 +20,23 @@
 
     <string name="etiqueta_valores">Valores</string>
     <string name="contenido_valores">Pensamiento crítico, respeto en el debate, rigor intelectual, apertura al diálogo y compromiso con la sociedad.</string>
+
+    <string name="mensaje_no_autorizado">Para publicar en el foro debes presentar la prueba de aptitud de pensamiento crítico.</string>
+    <string name="mensaje_pendiente">Tu solicitud está en revisión por el equipo administrador.</string>
+    <string name="btn_postularme">Postularme</string>
+
+    <string name="titulo_prueba_aptitud">Prueba de Aptitud</string>
+    <string name="instrucciones_prueba">Responde con honestidad y desarrolla tus ideas. Cada respuesta debe tener al menos 15 palabras. Tus respuestas serán revisadas por el equipo administrador.</string>
+
+    <string name="pregunta_1">1. ¿Qué responsabilidad crees que tienen las personas con acceso a educación frente al resto de la sociedad?</string>
+    <string name="pregunta_2">2. Describe una situación reciente donde hayas cambiado de opinión después de escuchar un argumento distinto al tuyo.</string>
+    <string name="pregunta_3">3. ¿Cómo distinguirías una opinión bien fundamentada de una que solo repite lo que otros dicen?</string>
+    <string name="pregunta_4">4. ¿Qué papel debería tener el debate público en la toma de decisiones que afectan a una comunidad?</string>
+    <string name="pregunta_5">5. Si pudieras proponer un cambio social basado en una idea que has estudiado o leído, ¿cuál sería y por qué?</string>
+
+    <string name="btn_enviar_prueba">Enviar respuestas</string>
+    <string name="error_respuestas_cortas">Cada respuesta debe tener al menos %1$d palabras. Revisa tus respuestas antes de enviar.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_respuesta">Escribe tu respuesta aquí...</string>
 </resources>

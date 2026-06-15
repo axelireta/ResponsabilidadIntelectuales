@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_foro" />
 
     <fragment
+        android:id="@+id/pruebaAptitudFragment"
+        android:name="com.example.responsabilidad.ui.foro.PruebaAptitudFragment"
+        android:label="@string/titulo_prueba_aptitud"
+        tools:layout="@layout/fragment_prueba_aptitud" />
+
+    <fragment
         android:id="@+id/nosotrosFragment"
         android:name="com.example.responsabilidad.ui.nosotros.NosotrosFragment"
         android:label="@string/titulo_nosotros"
