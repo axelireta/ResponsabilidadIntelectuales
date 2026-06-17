@@ -8,6 +8,9 @@
         <item name="android:windowBackground">@color/rojo_vino_fondo</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="actionMenuTextColor">@color/blanco</item>
+        <item name="android:popupMenuStyle">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
 
     <style name="Theme.ResponsabilidadIntelectuales" parent="Base.Theme.ResponsabilidadIntelectuales" />
