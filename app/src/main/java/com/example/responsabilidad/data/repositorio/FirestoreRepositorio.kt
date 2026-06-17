@@ -17,7 +17,7 @@ object FirestoreRepositorio {
     private const val COLECCION_USUARIOS = "usuarios"
 
     // UID del administrador (se puede cambiar después)
-    private const val UID_ADMIN = "REEMPLAZAR_CON_UID_ADMIN"
+    private const val UID_ADMIN = "rdSnsTWCFXVASeg2b2hOqkEu6se2"
 
     fun esAdmin(): Boolean {
         return auth.currentUser?.uid == UID_ADMIN
