@@ -25,7 +25,7 @@ object FirestoreRepositorio {
 
     fun obtenerPublicaciones(callback: (List<Publicacion>) -> Unit) {
         db.collection(COLECCION_PUBLICACIONES)
-            .whereEqualTo("estado", "Aprobado")
+            .whereEqualTo("estado", "aprobado")
             .orderBy("fechaCreacion", Query.Direction.DESCENDING)
             .get()
             .addOnSuccessListener { resultado ->
