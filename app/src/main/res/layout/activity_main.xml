@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/rojo_vino"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.fragment.app.FragmentContainerView
