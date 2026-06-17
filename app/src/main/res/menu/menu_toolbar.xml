@@ -18,5 +18,9 @@
         android:id="@+id/action_admin"
         android:title="@string/titulo_admin"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cerrar_sesion"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never" />
 
 </menu>

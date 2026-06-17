@@ -57,4 +57,8 @@
     <string name="error_campos_vacios">Por favor llena todos los campos</string>
     <string name="error_login">No se pudo iniciar sesión. Verifica tus datos.</string>
     <string name="error_registro">No se pudo crear la cuenta. Intenta de nuevo.</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="confirmar_cerrar_sesion">¿Estás seguro que deseas cerrar sesión?</string>
+    <string name="btn_cerrar_sesion_confirmar">Cerrar sesión</string>
+    <string name="btn_cancelar">Cancelar</string>
 </resources>

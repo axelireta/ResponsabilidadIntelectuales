@@ -8,8 +8,14 @@
         <item name="android:windowBackground">@color/rojo_vino_fondo</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuEstilo</item>
 
     </style>
 
     <style name="Theme.ResponsabilidadIntelectuales" parent="Base.Theme.ResponsabilidadIntelectuales" />
+
+    <style name="PopupMenuEstilo" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 </resources>

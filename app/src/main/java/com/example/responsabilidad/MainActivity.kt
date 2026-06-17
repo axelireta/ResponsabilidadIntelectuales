@@ -59,6 +59,21 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
+            R.id.action_cerrar_sesion -> {
+                androidx.appcompat.app.AlertDialog.Builder(this)
+                    .setTitle(getString(R.string.cerrar_sesion))
+                    .setMessage(getString(R.string.confirmar_cerrar_sesion))
+                    .setPositiveButton(getString(R.string.btn_cerrar_sesion_confirmar)) { _, _ ->
+                        FirebaseAuth.getInstance().signOut()
+                        val intent = Intent(this, LoginActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
+                        finish()
+                    }
+                    .setNegativeButton(getString(R.string.btn_cancelar), null)
+                    .show()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
