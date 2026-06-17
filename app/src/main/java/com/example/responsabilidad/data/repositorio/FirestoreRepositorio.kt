@@ -12,7 +12,7 @@ object FirestoreRepositorio {
     private val auth = FirebaseAuth.getInstance()
 
     // Colecciones en Firestore
-    private const val COLECCION_PUBLICACIONES = "Publicaciones"
+    private const val COLECCION_PUBLICACIONES = "publicaciones"
     private const val COLECCION_SOLICITUDES = "solicitudes"
     private const val COLECCION_USUARIOS = "usuarios"
 
