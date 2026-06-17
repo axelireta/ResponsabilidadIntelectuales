@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ResponsabilidadIntelectuales</string>
+    <string name="app_name">Responsabilidad de los Intelectuales</string>
 
     <string name="titulo_material">Material</string>
     <string name="titulo_foro">Foro</string>
@@ -39,4 +39,22 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_respuesta">Escribe tu respuesta aquí...</string>
+
+    <string name="action_buscar">Buscar</string>
+    <string name="action_filtrar">Filtrar</string>
+    <string name="titulo_admin">Panel de Administrador</string>
+    <string name="etiqueta_estadisticas">Estadísticas</string>
+    <string name="etiqueta_solicitudes">Solicitudes Pendientes</string>
+    <string name="btn_aprobar">Aprobar</string>
+    <string name="btn_rechazar">Rechazar</string>
+    <string name="stat_publicaciones">Publicaciones totales: %1$d</string>
+    <string name="stat_pendientes">Solicitudes pendientes: %1$d</string>
+    <string name="stat_aprobados">Miembros aprobados: %1$d</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="error_campos_vacios">Por favor llena todos los campos</string>
+    <string name="error_login">No se pudo iniciar sesión. Verifica tus datos.</string>
+    <string name="error_registro">No se pudo crear la cuenta. Intenta de nuevo.</string>
 </resources>

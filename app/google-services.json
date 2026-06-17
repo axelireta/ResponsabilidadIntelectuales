@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011272410853",
+    "project_id": "responsabilidadintelectuales",
+    "storage_bucket": "responsabilidadintelectuales.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011272410853:android:a2ffd38911080612f1960c",
+        "android_client_info": {
+          "package_name": "com.example.responsabilidad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh2Gy6A-eNrZm5NLe2JRavbgoA3M3QKUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

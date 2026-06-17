@@ -6,16 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.responsabilidad.data.EstadoUsuario
-import com.example.responsabilidad.databinding.FragmentPruebaAptitudBinding
 import com.example.responsabilidad.R
+import com.example.responsabilidad.data.repositorio.FirestoreRepositorio
+import com.example.responsabilidad.databinding.FragmentPruebaAptitudBinding
 
 class PruebaAptitudFragment : Fragment() {
 
     private var _binding: FragmentPruebaAptitudBinding? = null
     private val binding get() = _binding!!
 
-    // Mínimo de palabras para considerar que una respuesta es una reflexión seria
     private val minimoPalabrasPorRespuesta = 15
 
     override fun onCreateView(
@@ -44,9 +43,7 @@ class PruebaAptitudFragment : Fragment() {
             binding.etRespuesta5.text.toString().trim()
         )
 
-        val respuestasValidas = respuestas.all { respuesta ->
-            contarPalabras(respuesta) >= minimoPalabrasPorRespuesta
-        }
+        val respuestasValidas = respuestas.all { contarPalabras(it) >= minimoPalabrasPorRespuesta }
 
         if (!respuestasValidas) {
             binding.tvwErrorValidacion.visibility = View.VISIBLE
@@ -58,12 +55,23 @@ class PruebaAptitudFragment : Fragment() {
         }
 
         binding.tvwErrorValidacion.visibility = View.GONE
+        binding.btnEnviarPrueba.isEnabled = false
 
-        // Guarda las respuestas y marca la solicitud como enviada
-        EstadoUsuario.respuestasPrueba = respuestas.toMutableList()
-        EstadoUsuario.solicitudEnviada = true
-
-        findNavController().popBackStack()
+        FirestoreRepositorio.enviarSolicitudAptitud(
+            respuestas = respuestas,
+            onExito = {
+                activity?.runOnUiThread {
+                    findNavController().popBackStack()
+                }
+            },
+            onError = { mensaje ->
+                activity?.runOnUiThread {
+                    binding.tvwErrorValidacion.visibility = View.VISIBLE
+                    binding.tvwErrorValidacion.text = mensaje
+                    binding.btnEnviarPrueba.isEnabled = true
+                }
+            }
+        )
     }
 
     private fun contarPalabras(texto: String): Int {

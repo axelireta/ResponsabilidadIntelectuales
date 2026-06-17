@@ -29,4 +29,10 @@
         android:label="@string/titulo_nosotros"
         tools:layout="@layout/fragment_nosotros" />
 
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.responsabilidad.ui.admin.AdminFragment"
+        android:label="@string/titulo_admin"
+        tools:layout="@layout/fragment_admin" />
+
 </navigation>
